@@ -1,0 +1,588 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap");
+@font-face {
+  font-family: "circebold";
+  src: url("../fonts/circle/circe-bold-webfont.woff2") format("woff2"), url("../fonts/circle/circe-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "circeregular";
+  src: url("../fonts/circle/circe-regular-webfont.woff2") format("woff2"), url("../fonts/circle/circe-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+.wrapper {
+  max-width: 1130px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.header-fluid {
+  position: relative;
+  padding-bottom: 223px;
+}
+
+.video {
+  position: relative;
+  width: 83vw;
+}
+
+.video__media {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-height: 720px;
+  height: auto;
+  border-bottom-right-radius: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.header {
+  position: relative;
+  font-size: 16px;
+  color: #fff;
+  line-height: 23px;
+  padding-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__nav li:last-child a {
+  color: #3e3c3e;
+}
+
+.header__nav li:last-child:hover {
+  border-bottom: 3px solid #3e3c3e;
+}
+
+.header__logo {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 35px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.header__currency {
+  font-weight: 600;
+}
+
+.header__currency-text {
+  padding: 4px 29px;
+  background-color: #fff;
+  color: #a3bdd8;
+  border-radius: 10px;
+}
+
+.header__item {
+  margin-left: 65px;
+  border-bottom: 3px solid transparent;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.header__item:hover {
+  border-bottom: 3px solid #fff;
+}
+
+.header__item-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.head {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 104px;
+  font-family: "circeregular";
+  font-weight: 600;
+}
+
+.head__menu-item {
+  margin-top: 35px;
+}
+
+.head__menu-link {
+  font-weight: 400;
+}
+
+.head__menu-img {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  color: #fff;
+}
+
+.head__body {
+  font-family: "Dosis", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 38px;
+  color: #fff;
+  margin-top: 107px;
+}
+
+.head__body-btnlink {
+  display: inline-block;
+  margin-top: 44px;
+  font-family: "circeregular";
+  font-weight: 400;
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 55px;
+  background-color: #f8a106;
+  border-radius: 15px;
+  -webkit-transition: all 0.6s linear;
+  -o-transition: all 0.6s linear;
+  transition: all 0.6s linear;
+}
+
+.head__body-btnlink:hover {
+  background-color: #f26419;
+}
+
+.head__tour {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 346px;
+          flex: 0 1 346px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #fcfcfc;
+  -webkit-box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.07);
+          box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.07);
+  border-radius: 30px;
+}
+
+.head__tour-title {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 32px;
+  margin: 40px 0 20px 0;
+}
+
+.head__tour-calendar {
+  min-width: 218px;
+  margin-bottom: 20px;
+}
+
+.head__tour-toggle, .head__tour-switch {
+  font-weight: 400;
+  position: relative;
+  display: inline-block;
+  width: 218px;
+  padding: 7px 0 6px 0px;
+  background: #f1f1f1;
+  border-radius: 10px;
+  font-size: 16px;
+  line-height: 23px;
+  margin-bottom: 25px;
+}
+
+.head__tour-switch {
+  margin-bottom: 36px;
+}
+
+.head__tour-checkbtn {
+  font-family: "circeregular";
+  font-weight: 400;
+  color: #fff;
+  font-size: 20px;
+  line-height: 29px;
+  padding: 8px 42px;
+  background-color: #33658a;
+  border-radius: 15px;
+  border-style: none;
+  border-color: unset;
+  cursor: pointer;
+  margin-bottom: 50px;
+  -webkit-transition: 0.6s;
+  -o-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.head__tour-checkbtn:focus {
+  outline: transparent;
+}
+
+.head__tour-checkbtn:hover {
+  background-color: #3e3c3e;
+}
+
+.calendar-label {
+  position: relative;
+  cursor: pointer;
+}
+
+.calendar-label:focus-within::after {
+  top: 9px;
+  -webkit-transform: rotate(135deg);
+      -ms-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+.calendar-label::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 12px;
+  width: 16px;
+  height: 16px;
+  background: url("../images/icons/calendar.svg");
+}
+
+.calendar-label::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  right: 8px;
+  width: 10px;
+  height: 10px;
+  background: transparent;
+  border-bottom: 1px solid #000;
+  border-left: 1px solid #000;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.calendar-input {
+  max-width: 180px;
+  width: 100%;
+  cursor: pointer;
+  padding: 11px 0 10px 39px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  border: none;
+}
+
+.calendar-input::-webkit-input-placeholder {
+  color: #000;
+  font-family: "circeregular";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.calendar-input::-moz-placeholder {
+  color: #000;
+  font-family: "circeregular";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.calendar-input:-ms-input-placeholder {
+  color: #000;
+  font-family: "circeregular";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.calendar-input::-ms-input-placeholder {
+  color: #000;
+  font-family: "circeregular";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.calendar-input::placeholder {
+  color: #000;
+  font-family: "circeregular";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.calendar-input:focus {
+  outline: transparent;
+}
+
+.toggle-tour input,
+.switch-tour input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggle-tour input:checked + .toggle-slider::before,
+.toggle-tour input:checked + .switch-slider::before,
+.switch-tour input:checked + .toggle-slider::before,
+.switch-tour input:checked + .switch-slider::before {
+  -webkit-transform: translateX(109px);
+      -ms-transform: translateX(109px);
+          transform: translateX(109px);
+}
+
+.toggle-tour input:checked ~ .toggle-item-air,
+.toggle-tour input:checked ~ .switch-item-uk,
+.toggle-tour input:checked + span + span svg g path,
+.switch-tour input:checked ~ .toggle-item-air,
+.switch-tour input:checked ~ .switch-item-uk,
+.switch-tour input:checked + span + span svg g path {
+  fill: #000;
+  color: #000;
+}
+
+.toggle-tour input:checked ~ .toggle-item-bus,
+.toggle-tour input:checked ~ .switch-item-world,
+.toggle-tour input:checked ~ .toggle-item-bus > svg path,
+.switch-tour input:checked ~ .toggle-item-bus,
+.switch-tour input:checked ~ .switch-item-world,
+.switch-tour input:checked ~ .toggle-item-bus > svg path {
+  fill: #fff;
+  color: #fff;
+}
+
+.toggle-slider,
+.switch-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.toggle-slider::before,
+.switch-slider::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 109px;
+  padding: 18px 0px;
+  border-radius: 10px;
+  background-color: #719fc1;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.switch-slider::before {
+  background-color: #f1b864;
+}
+
+.toggle-item-air {
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  color: #fff;
+  padding-left: 26px;
+}
+
+.toggle-item-air svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.toggle-item-bus {
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  color: #000;
+  padding-left: 45px;
+}
+
+.toggle-item-bus svg {
+  position: absolute;
+  top: 0;
+  left: 18px;
+}
+
+.switch-item-uk,
+.switch-item-world {
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.switch-item-uk {
+  padding-left: 18px;
+  color: #fff;
+}
+
+.switch-item-world {
+  color: #000;
+  padding-left: 40px;
+}
+
+section {
+  background-color: violet;
+  width: 100%;
+  height: 720px;
+}
